@@ -1,4 +1,6 @@
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -27,7 +29,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="fixed top-4 right-6 z-50">
+          <nav className="flex items-center gap-4 text-sm font-semibold text-white bg-black/30 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
+            <Link href="/">About</Link>
+            <Link href="/events">Events</Link>
+            <Link href="/ideation">Ideation</Link>
+            <Link href="/team">Team</Link>
+            <Link href="/contact">Contact</Link>
+          </nav>
+        </header>
         {children}
+        <Footer />
       </body>
     </html>
   );
