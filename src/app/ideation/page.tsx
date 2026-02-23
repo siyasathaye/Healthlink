@@ -92,7 +92,7 @@ const phases: Phase[] = [
 
 const benefits = [
   "Clinical mentors from UCSD to sanity-check every iteration.",
-  "Weekly build cadence so teams leave each term with artifacts, not slides.",
+  "Weekly build cadence so teams leave each term with progress.",
   "Regulatory and business guidance tailored to early MedTech teams.",
   "Peer accountability pods to keep momentum between workshops.",
 ];
@@ -158,12 +158,12 @@ export default function IdeationPage() {
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#071225]/30 to-[#071225]" />
         <div className="relative z-10 max-w-4xl mx-auto space-y-4">
-          <p className="text-4xl uppercase tracking-[0.05em] text-blue-300">
-            Ideation Program
-          </p>
           <h1 className="text-5xl font-bold leading-tight">
-            From spark to prototype in one academic year.
+            Ideation Program
           </h1>
+          <p className="text-base uppercase tracking-[0.25em] text-blue-300">
+            From spark to prototype in one academic year
+          </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="px-6 py-3 rounded-full bg-blue-500 text-white font-semibold shadow-lg shadow-blue-900/50 hover:scale-[1.02] transition">
               Apply to Ideation
@@ -171,41 +171,6 @@ export default function IdeationPage() {
             <div className="px-4 py-3 rounded-full bg-white/10 border border-white/10 text-sm text-neutral-200">
               Next cohort starts Fall • Ideathon kickoff in September
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* OVERVIEW */}
-      <section className="py-14 px-6 max-w-6xl mx-auto">
-        <div className="space-y-6 max-w-4xl">
-          <p className="text-blue-300 uppercase tracking-[0.2em] text-l">
-            Why this program
-          </p>
-          <h2 className="text-4xl font-extrabold">
-            Shipable progress, not just brainstorming.
-          </h2>
-          <p className="text-neutral-300 text-lg">
-            HealthLink&apos;s ideation track mirrors the Webflow timeline you saw:
-            Ideate, Innovate, Implement. Each phase pairs workshops with
-            hands-on build time so you leave every quarter with proof of progress.
-          </p>
-          <p className="text-neutral-100 text-base">
-            The Ideation program guides participants through the initial startup journey—from team formation to ideation to business modeling—building high-caliber teams ready to pursue acceleration.
-          </p>
-          <ul className="text-neutral-200 space-y-2 list-disc list-inside">
-            <li>Weekly applied workshops with clinical, product, and regulatory mentors.</li>
-            <li>Rapid prototyping and validation cadence so every phase ships something real.</li>
-            <li>Pitch coaching and advisor feedback to prepare for demo days and accelerators.</li>
-          </ul>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {benefits.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-blue-500/30 bg-white/5 p-4 text-neutral-100 shadow-lg shadow-blue-900/30"
-              >
-                {item}
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -259,6 +224,41 @@ export default function IdeationPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* OVERVIEW */}
+      <section className="py-14 px-6 max-w-6xl mx-auto">
+        <div className="space-y-6 max-w-4xl">
+          <p className="text-blue-300 uppercase tracking-[0.2em] text-l">
+            Why this program
+          </p>
+          <h2 className="text-4xl font-extrabold">
+            Shipable progress, not just brainstorming.
+          </h2>
+          <p className="text-neutral-300 text-lg">
+            HealthLink&apos;s ideation track mirrors the timeline you saw:
+            Ideate, Innovate, Implement. Each phase pairs workshops with
+            hands-on build time so you leave every quarter with proof of progress.
+          </p>
+          <p className="text-neutral-100 text-base">
+            The Ideation program guides participants through the initial startup journey—from team formation to ideation to business modeling—building high-caliber teams ready to pursue acceleration.
+          </p>
+          <ul className="text-neutral-200 space-y-2 list-disc list-inside">
+            <li>Applied workshops with clinical, product, and regulatory mentors.</li>
+            <li>Rapid prototyping and validation cadence so every phase ships something real.</li>
+            <li>Pitch coaching and advisor feedback to prepare for demo days and accelerators.</li>
+          </ul>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {benefits.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl border border-blue-500/30 bg-white/5 p-4 text-neutral-100 shadow-lg shadow-blue-900/30"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

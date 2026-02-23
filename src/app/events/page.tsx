@@ -5,49 +5,31 @@ import { useState } from "react";
 
 const events = [
   {
-    title: "even 1",
-    date: "2026-01-01",
+    title: "Speaker Series: Ronald Swanson",
+    date: "2026-01-22",
     time: "6:00 – 7:30 PM",
-    location: "Design & Innovation Building, UCSD",
+    location: "tbd",
     description:
-      "Get paired with teams and learn the clinical need-finding framework we use to start every sprint.",
+      "Chief Scientific Officer of Tyra Biosciences on building translational pipelines.",
+    tag: "Speaker",
+  },
+  {
+    title: "Speaker Series Workshop: Emily Chen",
+    date: "2026-01-29",
+    time: "6:00 – 7:30 PM",
+    location: "tbd",
+    description:
+      "Consultant at ECI Lifescience Consulting leads a hands-on strategy workshop.",
     tag: "Workshop",
   },
   {
-    title: "event 2",
-    date: "2026-01-09",
-    time: "5:30 – 8:00 PM",
-    location: "The Basement Makerspace",
+    title: "Speaker Series: Gregory Peters",
+    date: "2026-02-05",
+    time: "6:00 – 7:30 PM",
+    location: "tbd",
     description:
-      "Hands-on build night with fabrication mentors covering low-fidelity prototyping and quick validation.",
-    tag: "Build",
-  },
-  {
-    title: "event 3",
-    date: "2026-01-14",
-    time: "4:00 – 6:00 PM",
-    location: "Health Sciences Education Center",
-    description:
-      "1:1 time with physicians and founders to stress-test your problem statement and solution scope.",
-    tag: "Mentorship",
-  },
-  {
-    title: "event 4",
-    date: "2026-01-22",
-    time: "6:30 – 8:00 PM",
-    location: "Zoom + In-person hybrid",
-    description:
-      "Former HealthLink teams walk through FDA pathways, clinical trials, and how they navigated them.",
-    tag: "Seminar",
-  },
-  {
-    title: "event 5",
-    date: "2026-01-30",
-    time: "5:00 – 7:00 PM",
-    location: "Price Center East Ballroom",
-    description:
-      "Tighten your story with pitch coaches and live feedback ahead of the end-of-month showcase.",
-    tag: "Pitch",
+      "CTO and Cofounder of BrilliantBiome on bioengineering at startup speed.",
+    tag: "Speaker",
   },
 ];
 
@@ -212,15 +194,11 @@ export default function EventsPage() {
       >
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
         <div className="relative z-10 max-w-4xl mx-auto space-y-4">
-          <p className="text-l uppercase tracking-[0.35em] text-blue-200">
-            Events & Workshops
-          </p>
           <h1 className="text-5xl font-extrabold leading-tight">
-            Build together every week.
+            Events & Workshops
           </h1>
-          <p className="text-lg text-neutral-200">
-            Curated programming that moves student teams from idea to demo-ready
-            prototypes with mentorship baked in.
+          <p className="text-base uppercase tracking-[0.25em] text-blue-300">
+            Build together every week
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="px-6 py-3 rounded-full bg-blue-500 text-white font-semibold shadow-lg shadow-blue-900/50 hover:scale-[1.02] transition">

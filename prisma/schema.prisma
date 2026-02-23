@@ -1,0 +1,51 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String     @id @default(cuid())
+  email     String     @unique
+  name      String?
+  role      Role       @default(MEMBER)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  
+  attendances Attendance[]
+}
+
+model Event {
+  id         String     @id @default(cuid())
+  title      String
+  description String?
+  date       DateTime
+  location   String?
+  accessCode String?    @unique
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  
+  attendances Attendance[]
+}
+
+model Attendance {
+  id        String     @id @default(cuid())
+  userId    String
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  eventId   String
+  event     Event      @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  createdAt DateTime   @default(now())
+  
+  @@unique([userId, eventId])
+}
+
+enum Role {
+  MEMBER
+  OFFICER
+}

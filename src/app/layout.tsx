@@ -35,7 +35,7 @@ export default function RootLayout({
             <Link href="/events">Events</Link>
             <Link href="/ideation">Ideation</Link>
             <Link href="/team">Team</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/login">Login</Link>
           </nav>
         </header>
         {children}
