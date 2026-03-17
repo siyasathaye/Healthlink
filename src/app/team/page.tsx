@@ -12,7 +12,7 @@ const teams = [
         name: "Julia Nguyen",
         role: "VP External",
         major: "Bio · Bioinformatics",
-        image: "/professional_photos/julia.jpeg",
+        image: "/professional_photos/julia.JPEG",
       },
       {
         name: "Prachi Heda",
@@ -41,7 +41,7 @@ const teams = [
         name: "Krushy Acharya",
         role: "Operations Coordinator",
         major: "Human Biology",
-        image: "/professional_photos/68da2cdc5b4cad954e5c8497_krushy_headshot-p-130x130q80.png",
+        image: "",
       },
       {
         name: "Shiv Punjabi",

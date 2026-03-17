@@ -71,7 +71,7 @@ export default function HomePage() {
     <div className="relative">
       <div className="rounded-3xl overflow-hidden border border-blue-500/40 shadow-xl shadow-blue-900/40">
         <img
-          src="/home/who_we_are.jpg"
+          src="/home/who_we_are.JPG"
           alt="HealthLink members collaborating"
           className="w-full h-full object-cover"
         />
@@ -129,7 +129,7 @@ export default function HomePage() {
     <div className="order-1 md:order-2 relative">
       <div className="rounded-3xl overflow-hidden border border-blue-500/40 shadow-xl shadow-blue-900/40">
         <img
-          src="/home/what_we_do1.jpg"
+          src="/home/what_we_do1.JPG"
           alt="HealthLink workshop or pitch event"
           className="w-full h-full object-cover"
         />
