@@ -41,7 +41,7 @@ const teams = [
         name: "Krushy Acharya",
         role: "Operations Coordinator",
         major: "Human Biology",
-        image: "",
+        image: "/professional_photos/krushy.jpg",
       },
       {
         name: "Shiv Punjabi",
