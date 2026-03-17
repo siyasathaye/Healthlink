@@ -158,12 +158,12 @@ export default function IdeationPage() {
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#071225]/30 to-[#071225]" />
         <div className="relative z-10 max-w-4xl mx-auto space-y-4">
-          <p className="text-4xl uppercase tracking-[0.05em] text-blue-300">
+          <h1 className="text-5xl font-extrabold leading-tight">
             Ideation Program
-          </p>
-          <h1 className="text-5xl font-bold leading-tight">
-            From spark to prototype in one academic year.
           </h1>
+          <p className="text-base uppercase tracking-[0.25em] text-blue-300">
+            From spark to prototype in one academic year.
+          </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="px-6 py-3 rounded-full bg-blue-500 text-white font-semibold shadow-lg shadow-blue-900/50 hover:scale-[1.02] transition">
               Apply to Ideation
