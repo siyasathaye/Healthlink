@@ -195,11 +195,8 @@ export default function EventsPage() {
       .map((ev) => {
         const start = ev.checkinOpensAt ? new Date(ev.checkinOpensAt) : null;
         const end = ev.checkinClosesAt ? new Date(ev.checkinClosesAt) : null;
-        const dateKey = start
-          ? formatLocalDateKey(start)
-          : end
-            ? formatLocalDateKey(end)
-            : null;
+        const dateKey =
+          (ev.checkinOpensAt ?? ev.checkinClosesAt ?? "").slice(0, 10) || null;
         const timeLabel = start
           ? `${new Intl.DateTimeFormat("en-US", {
               hour: "numeric",
