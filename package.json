@@ -16,7 +16,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.90.1",
     "framer-motion": "^12.23.26",
-    "next": "latest",
+    "next": "^16.1.1",
     "prisma": "^7.2.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -29,7 +29,7 @@
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
-    "eslint-config-next": "latest",
+    "eslint-config-next": "^16.1.1",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
     "typescript": "^5"
