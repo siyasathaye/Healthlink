@@ -309,7 +309,7 @@ export default function EventsPage() {
                       </div>
                       <div>
                         <p className="text-xs uppercase tracking-[0.25em] text-blue-200">
-                          {event.tag || "Event"}
+                          {"Event"}
                         </p>
                         <h3 className="text-2xl font-bold leading-tight">
                           {event.title}
