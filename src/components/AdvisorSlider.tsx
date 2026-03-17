@@ -8,17 +8,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const advisors = [
-  { name: "Rebecca Deller", title: "MedTech Accelerator Program Manager, IGE UCSD", image: "/Advisors/becky.jpeg" },
-  { name: "Alan Moazzam, MD", title: "Hospitalist at UCSD Medicine", image: "/Advisors/alan.jpeg" },
-  { name: "Jacques Chirazi", title: "Director of Student Entrepreneurship at UCSD", image: "/Advisors/jacques.png" },
-  { name: "Murray Reicher, MD", title: "Former CMO of IBM & Serial Entrepreneur", image: "/Advisors/murray.jpeg" },
-  { name: "Ravi Kumar", title: "MS3 UC, San Diego School of Medicine", image: "/Advisors/Ravi.webp" },
-  { name: "Noah C. Golestani", title: "MS2, UC San Diego School of Medicine", image: "/Advisors/Noah.webp" },
-  { name: "Ryan Sindewald", title: "MS2 UC, San Diego School of Medicine", image: "/Advisors/Ryan.png" },
-  { name: "Zina Patel", title: "Harvard Business School 2+2 Candidate & UCSD alum", image: "/Advisors/Zina.jpeg" },
-  { name: "Asish Koruprolu", title: "Ph.D Candidate, Electrical Engineering at UCSD", image: "/Advisors/Asish.png" },
-  { name: "Arshan Ommid", title: "CEO of Dermose & MS Candidate at UCSD", image: "/Advisors/Arshan.jpeg" },
-  { name: "Kevin Jubbal, MD", title: "CEO of MedSchoolInsiders & Physician Entrepeneur", image: "/Advisors/Kevin.png" },
+  { name: "Rebecca Deller", title: "MedTech Accelerator Program Manager, IGE UCSD", image: "/advisors/becky.jpeg" },
+  { name: "Alan Moazzam, MD", title: "Hospitalist at UCSD Medicine", image: "/advisors/alan.jpeg" },
+  { name: "Jacques Chirazi", title: "Director of Student Entrepreneurship at UCSD", image: "/advisors/jacques.png" },
+  { name: "Murray Reicher, MD", title: "Former CMO of IBM & Serial Entrepreneur", image: "/advisors/murray.jpeg" },
+  { name: "Ravi Kumar", title: "MS3 UC, San Diego School of Medicine", image: "/advisors/ravi.webp" },
+  { name: "Noah C. Golestani", title: "MS2, UC San Diego School of Medicine", image: "/advisors/noah.webp" },
+  { name: "Ryan Sindewald", title: "MS2 UC, San Diego School of Medicine", image: "/advisors/ryan.png" },
+  { name: "Zina Patel", title: "Harvard Business School 2+2 Candidate & UCSD alum", image: "/advisors/zina.jpeg" },
+  { name: "Asish Koruprolu", title: "Ph.D Candidate, Electrical Engineering at UCSD", image: "/advisors/asish.png" },
+  { name: "Arshan Ommid", title: "CEO of Dermose & MS Candidate at UCSD", image: "/advisors/arshan.jpeg" },
+  { name: "Kevin Jubbal, MD", title: "CEO of MedSchoolInsiders & Physician Entrepeneur", image: "/advisors/kevin.png" },
 ];
 
 const slides = [
