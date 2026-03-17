@@ -30,12 +30,12 @@ export default function Footer() {
           <h3 className="text-xl font-semibold text-white mb-3">Resources</h3>
           <ul className="space-y-2 text-neutral-300">
             <li>
-              <a href="https://instagram.com" className="hover:text-blue-300">
+              <a href="https://www.instagram.com/healthlinkatucsd?igsh=NTc4MTIwNjQ2YQ==" className="hover:text-blue-300">
                 Instagram
               </a>
             </li>
             <li>
-              <a href="https://discord.gg" className="hover:text-blue-300">
+              <a href="" className="hover:text-blue-300">
                 Discord
               </a>
             </li>
@@ -43,21 +43,7 @@ export default function Footer() {
         </div>
 
         {/* ABOUT */}
-        <div>
-          <h3 className="text-xl font-semibold text-white mb-3">About</h3>
-          <ul className="space-y-2 text-neutral-300">
-            <li>
-              <a href="/terms" className="hover:text-blue-300">
-                Terms & Conditions
-              </a>
-            </li>
-            <li>
-              <a href="/privacy" className="hover:text-blue-300">
-                Privacy Policy
-              </a>
-            </li>
-          </ul>
-        </div>
+        
       </div>
 
       <div className="border-t border-blue-900/40 py-6 text-center text-neutral-500 text-sm">
