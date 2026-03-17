@@ -259,13 +259,13 @@ export default function EventsPage() {
                 <button className="px-6 py-3 rounded-full bg-blue-500 text-white font-semibold shadow-lg shadow-blue-900/50 hover:scale-[1.02] transition">
                   RSVP for the next event
                 </button>
-                <div className="px-4 py-3 rounded-full bg-white/10 border border-white/10 text-sm text-neutral-200">
-                  {nextEvent
-                    ? `Next up: ${nextEvent.title} • ${formatDateLabel(nextEvent.dateKey)}${nextEvent.timeLabel ? ` at ${nextEvent.timeLabel}` : ""}`
+                  <div className="px-4 py-3 rounded-full bg-white/10 border border-white/10 text-sm text-neutral-200">
+                    {nextEvent
+                    ? `Next up: ${nextEvent.title} • ${formatDateLabel(nextEvent.dateKey ?? nextEvent.checkinOpensAt ?? nextEvent.checkinClosesAt ?? "")}${nextEvent.timeLabel ? ` at ${nextEvent.timeLabel}` : ""}`
                     : "No upcoming events"}
+                  </div>
                 </div>
               </div>
-            </div>
       </section>
 
       {/* UPCOMING EVENTS */}
