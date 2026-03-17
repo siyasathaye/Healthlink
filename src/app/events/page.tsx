@@ -238,7 +238,9 @@ export default function EventsPage() {
 
   const displayEvents = sortedUpcoming.length ? sortedUpcoming : fallbackSorted;
   const nextEvent = sortedUpcoming[0] ?? null;
-  const calendarEvents = sortedUpcoming.length ? sortedUpcoming : fallbackSorted;
+  const calendarEvents: CalendarEvent[] = (sortedUpcoming.length ? sortedUpcoming : fallbackSorted).filter(
+    (ev): ev is CalendarEvent => Boolean(ev.dateKey),
+  ) as CalendarEvent[];
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#071225] via-[#0a1b35] to-[#102647] text-white">
